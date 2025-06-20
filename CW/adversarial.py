@@ -85,7 +85,7 @@ class Adversarial(object):
 
         # check if the original image is already adversarial
         try:
-            self.predictions(original_image)
+            self.predictions(original_image, strict=False) # <--- AÑADIMOS strict=False
         except StopAttack:
             # if a threshold is specified and the original input is
             # misclassified, this can already cause a StopAttack
