@@ -1,3 +1,15 @@
-# Ignorar archivos compilados de Python
-*.pyc
+# Caché de Python
 __pycache__/
+*.py[cod]
+
+# Datos y modelos pesados
+*.pth
+*.npy
+
+# Checkpoints de Jupyter
+.ipynb_checkpoints/
+
+# Logs y entornos virtuales
+*.log
+env/
+venv/
